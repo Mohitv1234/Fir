@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 100%;
+    -webkit-animation: test;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@-webkit-keyframes test {
+  0% {
+    background-image: url(https://images.theconversation.com/files/228898/original/file-20180723-189323-4azrm4.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=600&h=357&fit=crop&dpr=1);
+  }
+  100% {
+    background-image: url(https://ansunibaate.com/wp-content/uploads/2018/07/176335.jpg);
+  }
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    background-color: rgb(151, 150, 150);
+    font-weight: bold;
+}
+#logo{
+    width: 30%;
+    text-align: center;
+    animation: beat .25s infinite alternate;
+}
+@keyframes beat{
+    to { transform: scale(1.4); }
+}
+#menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+#menu a{
+    width: 25%;
+    color: cornsilk;
+    text-decoration: none;
+}
+#menu a:first-child{
+    color: turquoise;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: cornsilk;
+}
+#Sec{
+
+}
+#Sec h3{
+font-size: 35px;
+font-weight: 500;
+letter-spacing: 3px;
+text-shadow: 1px 1px 2px black;
+
+}
+#Sec h1{
+    margin: 10px 0 10px 0;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    }
+    #Sec p{
+        font-size: 25px;
+        word-spacing: 2px;
+        margin-bottom: 25px;
+        text-shadow: 1px 1px 1px black;
+        }
+    #Sec a{
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+    #Sec .btnone{
+        background-color: blanchedalmond;
+        color: rgb(16, 0, 247);
+    }
+    #Sec .btnone:focus{
+        background-color: rgb(20, 247, 255);
+        color:rgb(0, 0, 0); 
+}
+    #Sec .btntwo{
+        background-color: blanchedalmond;
+        color:rgb(0, 17, 252);
+    }
+    #Sec .btntwo:focus{
+        background-color: rgb(20, 247, 255);
+        color: black;
+    }
+    span::before {
+        content: "Geeks";
+        animation: animate infinite 10s;
+        padding-left: 10px;
+    }
+  
+    @keyframes animate {
+        0% {content: "Bhopal";}
+        10% {content: "Indore";}
+        20% {content: "Jabalpur";}
+        30%{content: "Ujain";}
+        40%{content: "Mumbai";}
+        50%{content: "Delhi";}
+        100%{content: "My Home";}
+    } 
